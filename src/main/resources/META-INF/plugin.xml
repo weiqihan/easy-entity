@@ -1,10 +1,10 @@
 <idea-plugin>
-    <id>easy entity</id>
-    <name>easy entity</name>
+    <id>easy-entity</id>
+    <name>easy-entity</name>
     <vendor email="1224722373@qq.com" >韩伟其</vendor>
 
     <description>
-        便捷生成mysql表对应的entity实体类,例如：
+        1.便捷生成mysql表对应的entity实体类,例如：
             @TableName("user")
             class UserEntity{
                 /**
@@ -13,7 +13,8 @@
                 @TableField("user_name")
                 private String userName;
             }
-        只需选中你想要存放entity的包目录，右键->选择Easy Entity,输入表名即可。
+        2.只需选中你想要存放entity的包目录，右键->选择Easy Entity,输入表名即可。
+        3.idea版本要求2021.1到2022.2
     </description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
