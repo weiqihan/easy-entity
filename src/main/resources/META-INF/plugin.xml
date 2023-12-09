@@ -23,7 +23,7 @@
     <depends>com.intellij.modules.lang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationConfigurable groupId="entityBuilder" displayName="Easy Entity" id="Easy Entity" instance="com.swing.page.EntityBuilderPage" >
+        <applicationConfigurable groupId="entityBuilder" displayName="Easy Entity" id="EasyEntity" instance="com.swing.page.EntityBuilderPage" >
         </applicationConfigurable>
         <applicationService serviceImplementation="com.swing.Persistent.MysqlPersistentSettings"></applicationService>
     </extensions>
