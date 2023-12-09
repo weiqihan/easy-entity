@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>easy entity</id>
+    <name>easy entity</name>
+    <vendor email="1224722373@qq.com" >韩伟其</vendor>
+
+    <description>
+        便捷生成mysql表对应的entity实体类,例如：
+            @TableName("user")
+            class UserEntity{
+                /**
+                * 名称
+                */
+                @TableField("user_name")
+                private String userName;
+            }
+        只需选中你想要存放entity的包目录，右键->选择Easy Entity,输入表名即可。
+    </description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable groupId="entityBuilder" displayName="Easy Entity" id="Easy Entity" instance="com.swing.page.EntityBuilderPage" >
+        </applicationConfigurable>
+        <applicationService serviceImplementation="com.swing.Persistent.MysqlPersistentSettings"></applicationService>
+    </extensions>
+
+    <actions>
+        <group id="ToolWindowEntityButton" text="Easy Entity" description="Actions for Easy Entity">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last" />
+            <action id="MyEasyEntityAction" class="com.swing.action.ToolWindowEntityButton" text="Easy Entity" description="Easy Entity Action">
+            </action>
+        </group>
+    </actions>
+</idea-plugin>
