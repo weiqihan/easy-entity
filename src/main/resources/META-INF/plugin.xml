@@ -14,7 +14,7 @@
                 private String userName;
             }
         2.只需选中你想要存放entity的包目录，右键->选择Easy Entity,输入表名即可。
-        3.idea版本要求2021.1到2022.2, jdk9及以上
+        3.idea版本要求2021.1到2022.2, jdk11及以上
     </description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
